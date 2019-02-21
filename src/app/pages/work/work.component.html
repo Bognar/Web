@@ -1,19 +1,23 @@
 <div id="textmiddle"><h3>hi again {{visitor}}!</h3>
   <br>
   <p>Here you can check my work, hope you will like it!</p></div>
-<div *ngFor="let display of mywork" class="card" id="cardset">
-    
-    <div class="card-body">
-      <h5 class="card-title">{{display.title}}</h5>
-      <p class="card-text">{{display.description }}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">{{display.tech}}</li>
-      
-    </ul>
-    <div class="card-body">
-        
-      <a href="{{display.url}}" class="btn btn-secondary float-left">Git repo</a>
-      <a href="{{display.download}}" class="btn btn-secondary float-right">Download</a>
-    </div>
+
+  <div class="container">
+      <div class="row">
+          <div *ngFor="let display of mywork" >
+             <div class="col-sm-6 mx-auto" style="height:300px;"> 
+              <span id="cardset">
+                <h5 id="titletext">{{display.title}}</h5>
+              </span>
+              <br>
+              <span id="worktext">{{display.description | slice:0:200}}...</span>
+             <br>
+              <span id="workapps">{{display.tech}}</span>
+              <br>
+              <a type="button" class="btn btn-light" id="buttongit" href="{{display.url}}">Git repo</a>
+              <a *ngIf="display.download" type="button" class="btn btn-light" id="buttondownload" href="{{display.download}}">Download</a>
+              </div>
+              </div>
+      </div>
   </div>
+  

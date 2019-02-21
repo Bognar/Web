@@ -2,7 +2,7 @@
     {
         "title": "Galatea",
         "url": "https://github.com/Bognar/Galatea",
-        "description": "Galatea is a fun application / game for practicing divination, and the constituent part is a 36-pack jar popularly called Gypsy or Gypsy Tarot Cards.",
+        "description": "Galatea is a fun application / game for practicing divination, and the constituent part is a 36-pack set of cards popularly called Gypsy or Gypsy Tarot Cards.",
         "tech": "AngularJS, Ionic 1, HTML, CSS, Photoshop",
         "download": "https://play.google.com/store/apps/details?id=io.cordova.galatea100"
     },
@@ -13,5 +13,38 @@
         "tech": "Angular 4, Ionic 3, HTML, CSS, Photoshop, Inkscape",
         "download": "https://play.google.com/store/apps/details?id=ifun.studio.app2"
 
+    },
+    {
+        "title": "Movie DB",
+        "url": "https://github.com/Bognar/Movie-DB",
+        "description": "AngularJS SPA that browses through TMDb website and picks movie titles depending on your search input.",
+        "tech": "CSS, HTML, Angular, jQuery, Bootstrap, RESTful Api, JSON",
+        "download": ""
+
+    },
+    {
+        "title": "Benefit-app",
+        "url": "https://github.com/Bognar/Benefit-app",
+        "description": "AngularJS app for calculating benefits(two-way binding and math formula). At my job I had a need for an app that will calculate benefits which then I must set into a billing application.",
+        "tech": "CSS, HTML, Angular, ionic",
+        "download": ""
+
+    },
+    {
+        "title": "Personal Website",
+        "url": "https://github.com/Bognar/bognar.github.io",
+        "description": "This is my peronal webpage hosted on github pages(old design)",
+        "tech": "CSS, HTML, Angular, jQuery, Bootstrap, JSON, ChartsJS, AnimateCSS",
+        "download": ""
+
+    },
+    {
+        "title": "GOT famous quote",
+        "url": "http://plnkr.co/edit/5HrWMu?p=preview",
+        "description": "App for showing famous quotes from the GoT show characters using AngularJS and online JSON API",
+        "tech": "CSS, HTML, AngularJS, jQuery, Bootstrap, RESTful api",
+        "download": ""
+
     }
+
 ]
