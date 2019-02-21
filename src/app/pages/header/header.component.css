@@ -1,6 +1,4 @@
-#navback {
-   /* background-color:black; */
-}
+
 #sprite {
 	background: url("/assets/logo.png") no-repeat 0 0;
 	width: 32px;
@@ -23,6 +21,32 @@
   justify-content: center;
   padding-top:50px;
 }
-#imagemenu {
+@media (max-width: 576px) {
+    #imagemenu {
+        width:50px;
+    }
+}
+@media (min-width: 576px) {
+    #imagemenu {
+        width:50px;
+    }
+}
+@media (min-width: 768px) { 
+    #imagemenu {
+    width:60px;
+}
+}
+
+
+@media (min-width: 992px) { 
+    #imagemenu {
+        width:80px;
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+    #imagemenu {
     width:100px;
+}
 }
