@@ -21,7 +21,7 @@
     <div class="col-md-6 padme2">
       <h3>My Skills</h3><br>
       <canvas baseChart [data]="polarAreaChartData" [labels]="polarAreaChartLabels" [legend]="polarAreaLegend"
-        [chartType]="polarAreaChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+        [chartType]="polarAreaChartType" (chartHover)="chartHovered($event)" [options]="polarAreaOptions" (chartClick)="chartClicked($event)">
       </canvas>
     </div>
   </div>
