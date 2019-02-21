@@ -1,0 +1,28 @@
+#navback {
+   /* background-color:black; */
+}
+#sprite {
+	background: url("/assets/logo.png") no-repeat 0 0;
+	width: 32px;
+    height: 36px;
+    position: absolute;
+    left:50%;
+    top:10px;
+}
+#sprite:hover {
+        background: url('/assets/logo.png') no-repeat -40px 0;
+        width: 32px;
+	    height: 36px;
+   }
+.navbar-brand a {
+    text-decoration: none;
+}
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top:50px;
+}
+#imagemenu {
+    width:100px;
+}

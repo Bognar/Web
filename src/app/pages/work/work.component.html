@@ -1,0 +1,19 @@
+<div id="textmiddle"><h3>hi again {{visitor}}!</h3>
+  <br>
+  <p>Here you can check my work, hope you will like it!</p></div>
+<div *ngFor="let display of mywork" class="card" id="cardset">
+    
+    <div class="card-body">
+      <h5 class="card-title">{{display.title}}</h5>
+      <p class="card-text">{{display.description }}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{display.tech}}</li>
+      
+    </ul>
+    <div class="card-body">
+        
+      <a href="{{display.url}}" class="btn btn-secondary float-left">Git repo</a>
+      <a href="{{display.download}}" class="btn btn-secondary float-right">Download</a>
+    </div>
+  </div>

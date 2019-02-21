@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 padme">
+      <h3>Hello, my name is Josip Bognar.</h3>
+      <h5>I am self-taught front-end developer with focus on writing clean, readable and efficient code.
+        Also, I have a good eye for details and that is what helps me to make pixel perfect presentation.
+        <br><br>
+        I striv to make well-crafted responsive websites with the focus on mobile. Meeting code and performance standards.
+      </h5>
+      <br>Can you tell me your name?<br>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" [disabled]='disable' placeholder="" aria-label="Recipient's username"
+          aria-describedby="button-addon2" [(ngModel)]="visitor" required>
+        <div class="input-group-append">
+          <button (click)="saveData($event)" class="btn btn-outline-secondary" type="button"
+            id="button-addon2">Send</button>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="col-md-6 padme2">
+      <h3>My Skills</h3><br>
+      <canvas baseChart [data]="polarAreaChartData" [labels]="polarAreaChartLabels" [legend]="polarAreaLegend"
+        [chartType]="polarAreaChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+      </canvas>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 padme2" id="animateblock">
+      <h3>Working environment</h3>
+      <h5>
+        Visual Studio Code, Git, Adobe Photoshop, Inkscape, Adobe XD, NPM, Angular CLI, Windows, StackOverflow
+      </h5>
+    </div>
+    <div class="col-md-6 padme2" id="animateblock2">
+      <h5>Hi <b>{{visitor}}!</b></h5>
+      <br>
+      Nice to meet you!
+    </div>
+  </div>
+</div>
