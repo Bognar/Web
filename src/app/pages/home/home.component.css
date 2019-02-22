@@ -42,16 +42,16 @@
 #banana {
     position: absolute;
     left: 80%;
-    top:50px;
+    top:10px;
 }
 #monkeysprite {
     position: absolute;
     left: 20%;
-    top:50px;
+    top:10px;
 }
 #buttongit {
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 50%;
 }
 #buttonreset {
