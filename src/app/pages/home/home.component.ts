@@ -22,12 +22,20 @@ export class HomeComponent implements OnInit {
   
   constructor() { }
 
- visitor = "Visitor";
+ visitor = localStorage.getItem('visitor');
  disable:boolean = false;
+ monkey:number = 20;
   ngOnInit() {
   }
-
-  saveData(){
+  monkeygo() {
+    if(true){
+    return this.monkey +=10;
+    }
+  }
+  monkeyreset() {
+    return this.monkey = 20;
+  }
+ saveData(){
     this.disable = true;
     localStorage.setItem('visitor', this.visitor);
   }

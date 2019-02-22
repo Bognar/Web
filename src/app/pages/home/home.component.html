@@ -41,9 +41,26 @@
       </div>
     </div>
     <div class="col-md-6 padme2" id="animateblock2">
-      <h5>Hi <b>{{visitor}}!</b></h5>
-      <br>
-      Nice to meet you!
+      
+     <div *ngIf="monkey > 70, else monkeytemplate">
+       <br>
+       That was awesome {{visitor}}!<br>
+       Small things can make us happy. 
+       If you want to get web gadgets like this on your website, just get in touch with me!
+       <br>
+       <a type="button" class="btn btn-light" id="buttonreset" (click)="monkeyreset()">Another try?</a>
+     </div>
+      <ng-template #monkeytemplate>
+          <h5>Hi <b>{{visitor}}!</b></h5>
+          <br>
+          <p >Can you help this small moneky to get banannas?</p>
+          <div id="monkeycage">
+        <img id="monkeysprite" [style.left.%]="monkey" src="../../../assets/monkeyspirite.png">
+        <img id="banana" src="../../../assets/bananas.png">
+        <a type="button" class="btn btn-light" id="buttongit" (click)="monkeygo()">Run</a>
+      </div>
+      </ng-template>
+    
     </div>
   </div>
 </div>
