@@ -1,0 +1,59 @@
+
+#sprite {
+	background: url("/assets/logo.png") no-repeat 0 0;
+	width: 32px;
+    height: 36px;
+    position: absolute;
+    left:50%;
+    top:10px;
+}
+#sprite:hover {
+        background: url('/assets/logo.png') no-repeat -40px 0;
+        width: 32px;
+	    height: 36px;
+   }
+.navbar-brand a {
+    text-decoration: none;
+}
+#imagemenu {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    display:block;
+}
+#imagemenu:hover {
+    transform: scale(0.8);
+}
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top:50px;
+}
+@media (max-width: 576px) {
+    #imagemenu {
+        width:50px;
+    }
+}
+@media (min-width: 576px) {
+    #imagemenu {
+        width:50px;
+    }
+}
+@media (min-width: 768px) { 
+    #imagemenu {
+    width:60px;
+    }
+}
+@media (min-width: 992px) { 
+    #imagemenu {
+        width:80px;
+    }
+ }
+@media (min-width: 1200px) { 
+    #imagemenu {
+    width:100px;
+    }
+}
