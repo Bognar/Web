@@ -45,19 +45,15 @@
 @media (min-width: 768px) { 
     #imagemenu {
     width:60px;
+    }
 }
-}
-
-
 @media (min-width: 992px) { 
     #imagemenu {
         width:80px;
     }
  }
-
-
 @media (min-width: 1200px) { 
     #imagemenu {
     width:100px;
-}
+    }
 }

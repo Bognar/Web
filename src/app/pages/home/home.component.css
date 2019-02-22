@@ -2,19 +2,19 @@
     padding-top:100px;
 }
 .padme2 {
-    padding-top:100px;
+    
     text-align: center;
 }
 #animateblock {
     animation-name: yellowbump;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-duration: 1s;
     opacity:0;
     animation-fill-mode: forwards;
 }
 #animateblock2 {
     animation-name: yellowbump;
-    animation-delay: 5s;
+    animation-delay: 3s;
     animation-duration: 1s;
     opacity:0;
     animation-fill-mode: forwards;
@@ -28,4 +28,7 @@
     100% {
         opacity:1;
     }
+}
+#envir {
+    text-align: left;
 }

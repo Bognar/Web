@@ -7,7 +7,7 @@
         <br><br>
         I striv to make well-crafted responsive websites with the focus on mobile. Meeting code and performance standards.
       </h5>
-      <br>Can you tell me your name?<br>
+      <br><span style="color:#1DBCB2">Can you tell me your name?</span><br>
       <div class="input-group mb-3">
         <input type="text" class="form-control" [disabled]='disable' placeholder="" aria-label="Recipient's username"
           aria-describedby="button-addon2" [(ngModel)]="visitor" required>
@@ -28,9 +28,17 @@
   <div class="row">
     <div class="col-md-6 padme2" id="animateblock">
       <h3>Working environment</h3>
-      <h5>
-        Visual Studio Code, Git, Adobe Photoshop, Inkscape, Adobe XD, NPM, Angular CLI, Windows, StackOverflow
-      </h5>
+      <div id="envir">
+        <b>Visual Studio Code</b> - I use VSC because it's simple, has built-in terminal and big repository of add-ons like Open Server.<br>
+        <b>Git</b> - Can't live without it!<br>
+        <b>Adobe Photoshop</b> - Using it only to edit and slice elements or make some filters on image.<br>
+        <b>Inkscape</b> - Using it to create SVG to animate and also to create element by using layers.<br> 
+        <b>Adobe XD</b> - really simple app to make wirefames or prototype.<br>
+        <b>NPM</b> - Can't live anymore without it!<br>
+        <b>Angular CLI</b> - Saves time, more focused on main logic of app because of it.<br>
+        <b>Windows</b> - Well, linux ubuntu is also ok, but I am addicted to some apps that are only on Windows OS.<br>
+        <b>StackOverflow</b> - better than Wikipedia and always so trustworthy.
+      </div>
     </div>
     <div class="col-md-6 padme2" id="animateblock2">
       <h5>Hi <b>{{visitor}}!</b></h5>

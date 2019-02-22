@@ -1,10 +1,29 @@
 footer {
-    
-    height: auto;
+    height: 100px;
     text-align: center;
+    width:100%;
     color: black;
     position:static;
     right: 0;
     bottom: 0;
     left: 0;
+}
+#cvicon {
+
+}
+#icoimg {
+    width:70px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    padding:5px 10px 5px 10px;
+}
+#icoimg:hover {
+    transform: scale(0.8);
+}
+#footertext {
+    font-size: 10px;
+    color: #ddd;
 }
