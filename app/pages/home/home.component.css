@@ -1,0 +1,60 @@
+.padme {
+    padding-top:100px;
+}
+.padme2 {
+    padding-top: 30px;
+    text-align: center;
+}
+#animateblock {
+    animation-name: yellowbump;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    opacity:0;
+    animation-fill-mode: forwards;
+}
+#animateblock2 {
+    animation-name: yellowbump;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    opacity:0;
+    animation-fill-mode: forwards;
+    height: 250px;
+}
+/* timeline for element  */
+@keyframes yellowbump {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+#envir {
+    text-align: left;
+}
+/* monkey and banana items */
+#monkeycage {
+    width:100%;
+    display:block;
+    position: relative;
+    height:20px;
+}
+#banana {
+    position: absolute;
+    left: 80%;
+    top:50px;
+}
+#monkeysprite {
+    position: absolute;
+    left: 20%;
+    top:50px;
+}
+#buttongit {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+}
+#buttonreset {
+    position: relative;
+    top: 20px;
+}
