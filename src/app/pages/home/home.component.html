@@ -44,7 +44,7 @@
       
      <div *ngIf="monkey > 70, else monkeytemplate">
        <br>
-       That was awesome {{visitor}}!<br>
+       That was awesome {{visitor}}!<br><br>
        Small things can make us happy. 
        If you want to get web gadgets like this on your website, just get in touch with me!
        <br>
@@ -53,7 +53,7 @@
       <ng-template #monkeytemplate>
           <h5>Hi <b>{{visitor}}!</b></h5>
           <br>
-          <p >Can you help this small moneky to get banannas?</p>
+          <p >Can you help this small monkey to get banannas?</p>
           <div id="monkeycage">
         <img id="monkeysprite" [style.left.%]="monkey" src="../../../assets/monkeyspirite.png">
         <img id="banana" src="../../../assets/bananas.png">
