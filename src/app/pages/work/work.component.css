@@ -1,11 +1,11 @@
 #cardset {
-    width: 360px;
+    width: 330px;
     background-repeat: no-repeat;
     height: 60px;
     display:block;
     background-position-x: center;
-    background-size: 360px;
-    margin: 20px 10px;
+    background-size: 330px;
+    margin: 20px 0px;
     background-image: url("../../../assets/worktape.png");
     
 }
@@ -29,14 +29,14 @@
 #worktext {
     width: 320px;
     position: absolute;
-    left: 90px;
+    left: 40px;
     top: 70px;
     height: auto;
 }
 #workapps {
     width: 320px;
     position: absolute;
-    left: 90px;
+    left: 40px;
     top: 210px;
     height: auto;
     font-family: monospace;
@@ -44,10 +44,10 @@
 #buttongit {
     position: absolute;
     top: 270px;
-    left: 90px;
+    left: 40px;
 }
 #buttondownload {
     position: absolute;
     top: 270px;
-    left: 290px;
+    left: 240px;
 }
