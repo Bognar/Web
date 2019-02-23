@@ -23,6 +23,14 @@
 
     },
     {
+        "title": "Website #2",
+        "url": "https://github.com/Bognar/bognar.github.io",
+        "description": "This is my peronal webpage with new desing. Wanted to create something more practical with more interactions with visitors.",
+        "tech": "CSS3, HTML, Angular, Bootstrap, JSON, ChartsJS, Static mail send, Typescript",
+        "download": ""
+
+    },
+    {
         "title": "Benefit-app",
         "url": "https://github.com/Bognar/Benefit-app",
         "description": "AngularJS app for calculating benefits(two-way binding and math formula). At my job I had a need for an app that will calculate benefits which then I must set into a billing application.",
@@ -32,7 +40,7 @@
     },
     {
         "title": "Personal Website",
-        "url": "https://github.com/Bognar/bognar.github.io",
+        "url": "https://github.com/Bognar/old-web",
         "description": "This is my peronal webpage hosted on github pages(old design)",
         "tech": "CSS, HTML, Angular, jQuery, Bootstrap, JSON, ChartsJS, AnimateCSS",
         "download": ""
