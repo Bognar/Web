@@ -25,8 +25,16 @@
     {
         "title": "Website #2",
         "url": "https://github.com/Bognar/bognar.github.io",
-        "description": "This is my peronal webpage with new desing. Wanted to create something more practical with more interactions with visitors.",
+        "description": "This is my peronal webpage with new design. Wanted to create something more practical with more interactions with visitors.",
         "tech": "CSS3, HTML, Angular, Bootstrap, JSON, ChartsJS, Static mail send, Typescript",
+        "download": ""
+
+    },
+    {
+        "title": "Angular Firebase blog",
+        "url": "",
+        "description": "This is private repositori so no link is provided. I have created angular 7 blog backend to write blog posts. data is sent to firebase and later consumed by blog loop",
+        "tech": "CSS, HTML, Angular, Bootstrap, FirebaseDB, TinyMCE 5",
         "download": ""
 
     },
