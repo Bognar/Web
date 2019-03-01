@@ -1,5 +1,7 @@
 <div class="container">
  <div class="row">
+   <h4>Recent Posts:</h4><br />
+  
     <div *ngFor="let item of posts | async;" class="cardpost" >
         <div class="row">
           <div class="col-sm-6">
@@ -8,10 +10,10 @@
             <hr>
             <span id="subtitle2"> {{item.date}}&nbsp;&nbsp;/&nbsp;&nbsp;</span>
             <span id="subtitle3"> {{item.tags}}</span><br />
-            {{item.desc}}<br />
-            <span [innerHTML]="item.html | slice:0:600"></span>
+            <h5>{{item.desc}}</h5><br /><br />
+            <span [innerHTML]="item.html | slice:0:600"></span>...
             <br />
-            <div class="bigbutton" [routerLink]="[ '/blog', item.key ]">Continue Reading...</div>
+            <div class="btn btn-light" [routerLink]="[ '/blog', item.key ]">Continue Reading...</div>
           </div>
           <div class="col-sm-6"><span id="figure"
               [ngStyle]="{'background-image': 'url(../assets/' + item.imgPath + ')'}"></span></div>

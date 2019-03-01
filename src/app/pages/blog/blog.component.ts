@@ -16,8 +16,8 @@ export class BlogComponent implements OnInit {
   public desc:string = "";
   public author:string = "";
   public tags:any[] = [];
-  singleposttrue = false;
-  key2 : string;
+
+  
    // date for post
    today = new Date();
    date = this.today.getFullYear()+'-'+(this.today.getMonth()+1)+'-'+this.today.getDate();

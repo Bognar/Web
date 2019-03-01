@@ -2,8 +2,10 @@
   <div class="row">
 <div class="cardpost" >
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-xl-12">
       <h3>{{(onepost | async)?.title}}</h3>
+      <span id="figure"
+        [ngStyle]="{'background-image': 'url(../assets/' + (onepost | async)?.imgPath + ')'}"></span>
       <span id="subtitle">by {{(onepost | async)?.author}}</span>
       <hr>
       <span id="subtitle2"> {{(onepost | async)?.date}}&nbsp;&nbsp;/&nbsp;&nbsp;</span>
@@ -13,8 +15,7 @@
       <br />
      
     </div>
-    <div class="col-sm-6"><span id="figure"
-        [ngStyle]="{'background-image': 'url(../assets/' + (onepost | async)?.imgPath + ')'}"></span></div>
+    
     <br />
     
   </div>
