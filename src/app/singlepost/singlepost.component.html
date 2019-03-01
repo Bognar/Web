@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+<div class="cardpost" >
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>{{(onepost | async)?.title}}</h3>
+      <span id="subtitle">by {{(onepost | async)?.author}}</span>
+      <hr>
+      <span id="subtitle2"> {{(onepost | async)?.date}}&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+      <span id="subtitle3"> {{(onepost | async)?.tags}}</span><br />
+      {{(onepost | async)?.desc}}<br />
+      <span [innerHTML]="(onepost | async)?.html"></span>
+      <br />
+     
+    </div>
+    <div class="col-sm-6"><span id="figure"
+        [ngStyle]="{'background-image': 'url(../assets/' + (onepost | async)?.imgPath + ')'}"></span></div>
+    <br />
+    
+  </div>
+    </div>
+  </div>
+  </div>

@@ -18,7 +18,7 @@
 
 }
 #subtitle2::before {
-    content:url("../../../assets/calendar.png")
+    content:url("../../assets/calendar.png")
 }
 #subtitle3 {
     color: #bbb;
@@ -26,11 +26,11 @@
 
 }
 #subtitle3::before {
-    content:url("../../../assets/tags.png");
+    content:url("../../assets/tags.png");
 
 }
 #subtitle::after {
-    content:url("../../../assets/man.png");
+    content:url("../../assets/man.png");
     
 }
 #figure {
