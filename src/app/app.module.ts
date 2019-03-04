@@ -10,11 +10,13 @@ import { WorkComponent } from './pages/work/work.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ChartsModule } from 'ng2-charts';
-import { SinglepostComponent } from './singlepost/singlepost.component';
+import { SinglepostComponent } from './pages/singlepost/singlepost.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { EditorModule } from '@tinymce/tinymce-angular';
+import { LoginComponent } from './pages/login/login.component';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 const environment = {
   production: false,
@@ -37,7 +39,8 @@ const environment = {
     WorkComponent,
     ContactComponent,
     HomeComponent,
-    SinglepostComponent
+    SinglepostComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ const environment = {
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
-    EditorModule
+    EditorModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="cardpost">
+      <div class="row">
+        <div class="col-xl-12">
+
+          <h3>{{(onepost | async)?.title}}</h3>
+          <span id="figure"
+            [ngStyle]="{'background-image': 'url(../assets/' + (onepost | async)?.imgPath + ')'}"></span>
+          <span id="subtitle">by {{(onepost | async)?.author}}</span>
+          <hr>
+          <span id="subtitle2"> {{(onepost | async)?.date}}&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+          <span id="subtitle3"> {{(onepost | async)?.tags}}</span><br />
+          {{(onepost | async)?.desc}}<br />
+          <span [innerHTML]="(onepost | async)?.html"></span>
+          <br />
+          
+        </div>
+
+        <br />
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" *ngIf="user">
+  <span style="text-align:center">
+    <h3>Create, edit or delete posts</h3>
+  </span>
+  <div>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="posttitle" class="form-control" placeholder="Enter title of the post">
+    </div>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="desc" class="form-control" placeholder="Enter short description for the post">
+    </div>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="imgPath" class="form-control" placeholder="eg: image.png">
+    </div>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="author" class="form-control" placeholder="Who wrote this">
+    </div>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="tags" class="form-control" placeholder="Give me some tags separated with ','">
+    </div>
+    <editor [(ngModel)]="textdata" apiKey="0ul6i0tjiokhth02b9iomap18pmhmk2mseh3d0jswm38axp9" [init]="{plugins: 'link image lists charmap print preview', toolbars: 'forecolor backcolor' }">
+    </editor>
+    <br />
+    <button class="btn btn-primary" (click)="posthtml()">Post new</button>&nbsp;
+    <button class="btn btn-warning" (click)="edit((onepost)?.key)">Edit</button>&nbsp;
+    <button class="btn btn-danger" (click)="del((onepost)?.key)">Delete!</button>
+  </div>
+</div>
