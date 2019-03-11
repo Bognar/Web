@@ -10,6 +10,7 @@ import { auth } from 'firebase/app';
 export class LoginComponent {
   user: string;
   pass: string;
+  logedIn:boolean = false;
   userData:any;
   constructor(public afAuth: AngularFireAuth) {
    
@@ -18,7 +19,7 @@ export class LoginComponent {
   logmein() {
     console.log(this.user)
     return this.afAuth.auth.signInWithEmailAndPassword(this.user, this.pass).then((user) => {
-      console.log(user);
+      this.logedIn = true;
       this.userData = user;
       localStorage.setItem('user', JSON.stringify(this.userData));
     })
@@ -29,6 +30,7 @@ export class LoginComponent {
   logmeout (){
   return this.afAuth.auth.signOut().then(() => {
     localStorage.removeItem('user');
+    this.logedIn = false;
     
   })
 }

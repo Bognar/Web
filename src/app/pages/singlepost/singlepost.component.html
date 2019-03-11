@@ -11,7 +11,7 @@
           <hr>
           <span id="subtitle2"> {{(onepost | async)?.date}}&nbsp;&nbsp;/&nbsp;&nbsp;</span>
           <span id="subtitle3"> {{(onepost | async)?.tags}}</span><br />
-          {{(onepost | async)?.desc}}<br />
+          
           <span [innerHTML]="(onepost | async)?.html"></span>
           <br />
           

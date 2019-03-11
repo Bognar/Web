@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
   }
   monkeygo() {
     if(true){
-    return this.monkey +=10;
+    return this.monkey +=12;
     }
   }
   monkeyreset() {

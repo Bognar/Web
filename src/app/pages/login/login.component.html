@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xl-12" id="login">
+      <h5>Please login to write blog posts!</h5><br /><br />
       <div class="input-group flex-nowrap">
         <div class="input-group-prepend">
           <span class="input-group-text" id="addon-wrapping">UN</span>
@@ -15,9 +16,10 @@
         <input type="password" [(ngModel)]="pass" class="form-control" placeholder="Enter your password" aria-label="Username" aria-describedby="addon-wrapping">
       </div>
       <br />
-      <button type="button" class="btn btn-light" (click)="logmein()" >Log me in</button>
+      <button type="button" class="btn btn-light" (click)="logmein()" *ngIf="!logedIn">Log me in</button>
       &nbsp;
-      <button type="button" class="btn btn-light" (click)="logmeout()" >Log me out</button>
+      <button type="button" class="btn btn-light" (click)="logmeout()" *ngIf="logedIn" >Log me out</button>
+      <br /><br />
     </div>
   </div>
 </div>
